@@ -1,0 +1,417 @@
+<resources>
+    <string name="app_name">MIO tools</string>
+
+    <string name="kConnection">连接</string>
+    <string name="kFeature">功能</string>
+    <string name="kSettings">设置</string>
+    <string name="kChannel">串口</string>
+    <string name="kWifi">连接Wifi</string>
+    <string name="kSet">配置</string>
+    <string name="kDisConnect">断开连接</string>
+    <string name="kSearch">搜索</string>
+    <string name="kConnected">已连接</string>
+    <string name="kVersion">当前版本:</string>
+    <string name="kConnectionWifi">请连接WIFI,如:HE... </string>
+
+    <!-- 功能-->
+    <string name="Instructions">AAP功能演示</string>
+    <string name="kRealData">实时数据</string>
+    <string name="kRename">修改名称</string>
+    <string name="kSetPN">配置PN</string>
+    <string name="kVersionManage">版本管理</string>
+    <string name="kDeviceOperation">继电器操作</string>
+    <string name="kCheckTime">对时</string>
+    <string name="kDeviceManage">表计档案管理</string>
+    <string name="WIFIset">WIFI设置</string>
+    <string name="GPSset">设置GPS</string>
+    <string name="DataManagement">数据管理</string>
+    <string name="getGPS">刷新终端位置</string>
+    <string name="GPSlocation">定位当前位置</string>
+    <string name="kReset">复位</string>
+    <string name="kLocalUpdate">本地升级</string>
+    <string name="kTerminalInfo">终端状态信息</string>
+    <string name="kTerminalVersionInfo">终端版本信息</string>
+    <string name="TerminalCentralizedMeterStatInfo">终端集中抄表状态信息</string>
+    <string name="kTerminalState">终端状态</string>
+    <string name="DeviceDocumentManage">表计档案管理</string>
+
+    <string name="NewPowerIndication">当前正向有功电能示值</string>
+    <string name="ForwardActivePower">日冻结数据</string>
+    <string name="PointBitmap">有效测量点位图</string>
+    <string name="meterInfo">表计信息</string>
+    <string name="metermgn">表计管理</string>
+    <string name="TransformerMonitoring">变压器监控终端状态量输入参数</string>
+    <string name="TermianalEle">终端电量底度</string>
+
+    <!-- 复位功能-->
+    <string name="kConfirmReset">确认复位?</string>
+    <string name="kResetData">数据区初始化</string>
+    <string name="kResetDevice">硬件初始化</string>
+    <string name="kResetAll">参数（除与系统主站通信有关的）及全体数据区初始化</string>
+
+    <!-- 版本管理-->
+    <string name="kManufacturer">厂商代号</string>
+    <string name="kDeviceCode">设备编号</string>
+    <string name="kSoftWareVersion">终端软件版本号</string>
+    <string name="kDeviceSoftWareDate">终端软件发布日期</string>
+    <string name="kDeviceCapacity">终端配置容量信息码</string>
+    <string name="kDeviceProtocolVersion">终端通信协议版本号</string>
+    <string name="kDeviceHardWareVersion">终端硬件版本号</string>
+    <string name="kDeviceHardWareDate">终端硬件发布日期</string>
+    <string name="kCommunicationModuleSoftWareVersion">下行通讯模块内部测试软件版本号</string>
+
+    <!-- 继电器操作-->
+    <string name="kRemoteSwitchOff">遥控跳闸</string>
+    <string name="kAllowSwitchOn">允许合闸</string>
+    <string name="kRemoteSwitchOn">遥控合闸</string>
+    <string name="kBreakerState">断路器开关状态</string>
+    <string name="OperationRlue1">1)限电时间:数值范围0～15,单位:0.5h(半个小时),为0时,表示紧急限电,即长时间限电,不自动解除限电状态;不为0时,按设置的限电时间进行限电.</string>
+    <string name="OperationRlue2">2)告警延时时间:数值范围0～15,单位:min,为"0"时,表示立即跳闸;不为0时,按设置的告警时间进行告警.</string>
+    <string name="OperationRlue3">1)告警延时时间:数值范围0～15,单位:min,为"0"时,表示立即合闸;不为0时,按设置的告警时间进行告警.</string>
+
+    <!-- 对时-->
+    <string name="kDeviceTime">设备时间</string>
+    <string name="kEditCheckTime">编辑校对时间</string>
+
+    <!--SIM卡认证-->
+    <string name="kSIMState">状态 :</string>
+    <string name="kSIM">SIM卡认证</string>
+    <string name="kSIMNoAuthentication">未认证</string>
+    <string name="kSIMNoFaction">不支持该功能</string>
+    <string name="kSIMAuthentication">认证</string>
+    <string name="kSIMAuthenticationHas">已认证</string>
+    <string name="kSIMphone">手机号码 :</string>
+    <string name="kSIMInfo">认证信息 :</string>
+    <string name="kSIMAuthing">执行认证</string>
+    <string name="kSIMUsernum">获取验证码</string>
+    <string name="kSIMUsernum1">验证码 : </string>
+    <string name="kSIMSucceed">验证成功 </string>
+    <string name="kSIMFail">验证失败</string>
+    <string name="kSIMTime">等待 :</string>
+    <string name="kSIMinputPhone">请输入号码</string>
+    <string name="kSIMVerification">请输入验证码</string>
+    <string name="kSIMSendMsg">【HEXING】 SIM卡验证码为:</string>
+
+    <!-- GPS-->
+    <string name="kLongitude">经度 :</string>
+    <string name="kLatitude">纬度 :</string>
+    <!-- wifi设置-->
+    <string name="WIFIname">WIFI名称</string>
+    <string name="setWIFI">WIFI设置</string>
+    <string name="setWIFIname">设置WIFI名称</string>
+    <string name="WIFIpassword">设置WIFI密码</string>
+    <string name="oldpassword">输入原密码</string>
+    <string name="newpassword">输入新密码</string>
+    <string name="newpassword2">确认新密码</string>
+    <!--ip设置-->
+    <string name="setIP">IP设置</string>
+    <string name="mainIP">主站IP</string>
+    <string name="mainIPset">主站IP设置</string>
+    <string name="terminalIP">终端IP</string>
+    <string name="terminalIPset">终端IP设置</string>
+    <string name="agentIp">代理服务器地址</string>
+    <string name="MainIPaddress">主用IP地址</string>
+    <string name="AlternateIPaddress">备用IP地址</string>
+    <string name="MianIPPort">端口</string>
+    <string name="Subnetmask">子网掩码</string>
+    <string name="Gateway">网关</string>
+    <string name="Proxyservertype">代理服务器类型</string>
+    <string name="Proxyserveraddress">代理服务器地址</string>
+    <string name="Proxyserverconnectionmode">代理服务器连接方式</string>
+    <string name="UserName">用户名</string>
+    <string name="Password">密码</string>
+    <string name="Terminallistenerport">终端侦听端口</string>
+    <string name="IPaddress">IP地址</string>
+
+    <!-- 本地升级 -->
+    <string name="kSelectFile">选择文件</string>
+    <string name="kNoFile">没有升级文件</string>
+    <string name="kTerminalVersion">终端版本</string>
+    <string name="kLatestVersion">已是最新版本</string>
+    <string name="kNewVersion">发现新版本</string>
+    <string name="kClient">HXEJ200客户端</string>
+    <string name="kUpgrade">升级终端中请稍等......</string>
+    <string name="kTransmit">正在传输数据</string>
+    <string name="kUpdateInfo">更新信息</string>
+    <string name="kLater">以后在说</string>
+    <string name="kUpdateImmediately">立即更新</string>
+    <string name="kNoUpdate">暂无更新</string>
+
+
+    <!--变压器监控终端状态量输入参数-->
+    <string name="kStateFlag">状态量属性标志</string>
+    <string name="kPhysicalQuantityType">对应的物理量类型</string>
+
+    <!-- settings-->
+    <string name="kWifiFilter">Wifi过滤</string>
+    <string name="kUpdate">更新</string>
+    <string name="kTimeoutSetting">超时设置</string>
+    <string name="kSecond">秒</string>
+
+    <string name="kCheckUpdateTip">检查更新前请确认网络连接是否可用</string>
+    <string name="kDefault">恢复默认</string>
+    <string name="kCheckUpdate">检查更新</string>
+    <string name="kServerAddress">服务器地址</string>
+
+    <string name="kCheckTimeInvalid">时间格式不正确，请输入正确的时间，如:1970/01/01 08:00:00</string>
+    <string name="kSetIpInvalid">数据格式不正确，请输入正确的格式，如:192.168.0.0,或192.168.0.0.1</string>
+    <string name="kSetGps">数据格式不正确，请输入正确的格式，如:04:1122.3344</string>
+
+    <string name="kCancel">取消</string>
+    <string name="kOk">确定</string>
+    <string name="kTip">提示</string>
+    <!-- 电流电压信息 -->
+    <string name="kKwAll">当前总有功功率</string>
+    <string name="kKwA">当前A相有功功率</string>
+    <string name="kKwB">当前B相有功功率</string>
+    <string name="kKwC">当前C相有功功率</string>
+
+    <string name="kKvarAll">当前总无功功率</string>
+    <string name="kKvarA">当前A相无功功率</string>
+    <string name="kKvarB">当前B相无功功率</string>
+    <string name="kKvarC">当前C相无功功率</string>
+
+    <string name="kFactorAll">当前总功率因素</string>
+    <string name="kFactorA">当前A相功率因素</string>
+    <string name="kFactorB">当前B相功率因素</string>
+    <string name="kFactorC">当前C相功率因素</string>
+
+    <string name="kKvaAll">当前总视在功率</string>
+    <string name="kKvaA">当前A相视在功率</string>
+    <string name="kKvaB">当前B相视在功率</string>
+    <string name="kKvaC">当前C相视在功率</string>
+
+    <string name="kIA">当前A相电流</string>
+    <string name="kIB">当前B相电流</string>
+    <string name="kIC">当前C相电流</string>
+    <string name="kIZero">当前零序电流</string>
+
+    <string name="kUA">当前A相电压</string>
+    <string name="kUB">当前B相电压</string>
+    <string name="kUC">当前C相电压</string>
+    <string-array name="realdata_listview">
+        <item>当前总有功功率</item>
+        <item>当前A相有功功率</item>
+        <item>当前B相有功功率</item>
+        <item>当前C相有功功率</item>
+        <item>当前总无功功率</item>
+        <item>当前A相无功功率</item>
+        <item>当前B相无功功率</item>
+        <item>当前C相无功功率</item>
+        <item>当前总功率因素</item>
+        <item>当前A相功率因素</item>
+        <item>当前B相功率因素</item>
+        <item>当前C相功率因素</item>
+        <item>当前A相电压</item>
+        <item>当前B相电压</item>
+        <item>当前C相电压</item>
+        <item>当前A相电流</item>
+        <item>当前B相电流</item>
+        <item>当前C相电流</item>
+        <item>当前零序电流</item>
+        <item>当前总视在功率</item>
+        <item>当前A相视在功率</item>
+        <item>当前B相视在功率</item>
+        <item>当前C相视在功率</item>
+        <item>Ua相位角</item>
+        <item>Ub相位角</item>
+        <item>Uc相位角</item>
+        <item>Ia相位角</item>
+        <item>Ib相位角</item>
+        <item>Ic相位角</item>
+    </string-array>
+    <string name="setSucceed">设置成功</string>
+    <string name="allowClose">允许合闸？</string>
+    <string name="Allowreset">允许复位？</string>
+
+    <!-- Toaast  -->
+    <string name="wifiName">请输入wifi名称</string>
+    <string name="NameNotChange">名称未改变</string>
+    <string name="NameChangeConnectAgain">名称改变,请重新连接</string>
+    <string name="PwsChangeConnectAgain">密码改变,请重新连接</string>
+    <string name="OldPWS">请输入原密码</string>
+    <string name="PWSlength">请输入长度大于8的新密码</string>
+    <string name="newPWSnotnull">确认新密码不能为空</string>
+    <string name="newPWSlength">新密码长度不对</string>
+    <string name="pwswrong">密码不对或两次密码不相同</string>
+    <string name="Query">查询</string>
+    <string name="AddMeter">新增表计</string>
+    <string name="kTime">请输入时间</string>
+    <string name="kLoadFail">定位失败</string>
+    <string name="kFresh">刷新成功</string>
+
+    <!--添加表计-->
+    <string name="kMeterNum">剩余测量点号:</string>
+    <string name="kMeterNum2">测量点号:</string>
+    <string name="kMeterchoiNum">请选择测量点号:</string>
+    <string name="kMeterAddSucceed">添加成功</string>
+    <string name="kMeterConnPort">通信端口</string>
+    <string name="kMeterConnAddress">通信地址</string>
+    <string name="kMeterRate">波特率</string>
+    <string name="kMeterMunicationProtocol">通讯协议</string>
+    <string name="kMeterDefault">默认</string>
+    <string name="kMeterDel">删除此表</string>
+    <string name="kMeterDelSucceed">删除成功</string>
+    <string name="kMeterType">Type</string>
+    <string name="kMeterTotal">TOTAL</string>
+    <string name="kMeterSucceeful">SUCCESSFUL</string>
+    <string name="kMeterRS485">RS485</string>
+    <string name="kMeterRFPLC">RF/PLC</string>
+
+
+    <string-array name="terminal_state_listview">
+        <item>上行GPRS模块运行状态</item>
+        <item>下行PLC模块运行状态</item>
+        <item>抄载波/无线表状态</item>
+        <item>抄485表状态</item>
+    </string-array>
+
+    <string-array name="version_info_listview">
+        <item>模块地址</item>
+        <item>厂商代码</item>
+        <item>芯片代码</item>
+        <item>版本日期</item>
+        <item>版本</item>
+    </string-array>
+
+    <string name="kterminal_info_num">本项数据块个数n</string>
+    <string-array name="terminal_state_info_listview">
+        <item>终端通信端口号</item>
+        <item>要抄电表总数</item>
+        <item>当前抄表工作状态标志</item>
+        <item>抄表成功块数</item>
+        <item>抄重点表成功块数</item>
+        <item>抄表开始时间</item>
+        <item>抄表结束时间</item>
+    </string-array>
+    <!--IPset spinner-->
+    <string-array name="IpsetSpinner1">
+        <item>不使用代理</item>
+        <item>http connect代理</item>
+        <item>socks4代理</item>
+        <item>socks5代理</item>
+    </string-array>
+    <string-array name="IpsetSpinner2">
+        <item>无需验证</item>
+        <item>需要用户名/密码</item>
+    </string-array>
+
+    <!--日冻结正向有功电能示值-->
+    <string name="TimeFormart">选择日期</string>
+    <string name="kDataTimeScale">日冻结类数据时标</string>
+    <string name="TerminalMeterReadingTime">终端抄表时间</string>
+    <string name="RateNumber">费率数M</string>
+    <string name="TotalPowerIndication">正向有功总电能示值</string>
+    <string name="Rate">费率</string>
+    <string name="PowerIndication">正向有功电能示值</string>
+    <string name="MeterNotExist">表计不存在</string>
+
+
+    <!--终端集中抄表状态信息-->
+    <string name="NumberOfDataBlocks">本项数据块个数n</string>
+    <!--有效测量点位图-->
+    <string name="kPointBitmapNumber">本次电能表/交流采样装置配置数量n</string>
+
+
+    <string-array name="kPointBitmapListview">
+        <item>电能表/交流采样装置序号</item>
+        <item>所属测量点号</item>
+        <item>通信速率</item>
+        <item>通信端口</item>
+        <item>通信协议类型</item>
+        <item>通信地址</item>
+        <item>通信密码</item>
+        <item>电能费率个数</item>
+        <item>有功电能示值整数位及小数位个数</item>
+        <item>所属采集器通信地址</item>
+        <item>用户大类号及用户小类号</item>
+    </string-array>
+    <!--表记档案管理-->
+    <string name="Spare">备用</string>
+    <string name="MeterId">表号</string>
+    <string name="MeterPn">测量点号</string>
+    <string name="MeterType">类型</string>
+    <string name="MeterUpdate">更新列表</string>
+    <string name="MeterState">抄表状态</string>
+    <string name="MeterMore">更多</string>
+    <string name="Meterhite">提示</string>
+    <string name="MeterAddData">正在加载数据中...</string>
+    <string name="MeterDelData">正在删除数据,请稍等....</string>
+    <string name="MeterdelMeter">确认删除此表</string>
+    <string name="MeterDetails">详情</string>
+
+    <!--后来补充-->
+    <string name="restrictEleTime">限电时间</string>
+    <string name="restrictDelayTime">告警延时时间</string>
+    <string name="PleaseEnterData">请输入数据</string>
+    <string name="DataShouldBeLessThan16">数据应小于16</string>
+    <string name="MesSendSucceed">短信发送成功</string>
+    <string name="MesSendFail">发送失败</string>
+    <string name="MesReceiveSucceed">对方接收成功</string>
+    <string name="MeterAddress">请输入12位地址且不能为0</string>
+
+    <!--Loagin-->
+    <string name="UsernamePassIsEmpty">用户名或密码为空</string>
+    <string name="UsernamePassIsError">用户名或密码错误</string>
+
+    <!--APP功能介绍-->
+    <array name="function">
+        <item>继电器操作</item>
+        <item>对时</item>
+        <item>表计管理</item>
+        <item>复位</item>
+        <item>SIM卡认证</item>
+        <item>WIFI设置</item>
+        <item>IP设置</item>
+        <item>GPS设置</item>
+    </array>
+
+    <!-- 数据管理-->
+    <string name="ManageData">数据管理</string>
+    <string name="AbnormalOperation">操作异常</string>
+    <string name="SaveSucceed">保存成功</string>
+    <string name="DataExist">已存在</string>
+    <string name="SaveData">保存数据</string>
+    <string name="NoData">没有数据</string>
+    <string name="ExportRealData">导出实时数据</string>
+    <string name="ExportFrozenData">导出日冻结数据</string>
+    <string name="ClearSaveData">清除所有数据</string>
+    <string name="GetTerminalFrozenData">终端日冻结数据</string>
+    <string name="ChoiceDate">请选择时间</string>
+    <string name="ReadingData">正在读取数据</string>
+    <string name="PleaseWait">请稍等...</string>
+    <string name="TotleCounter">共计</string>
+    <string name="ImpDateRule">结束时间不能小于开始时间</string>
+    <string name="StrTime">开始时间</string>
+    <string name="EndTime">结束时间</string>
+    <string name="ReadData">读取数据</string>
+    <string name="ExportData">导出数据</string>
+    <string name="ClearData">清除数据</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_terminal_state_info">TerminalStateInfoActivity</string>
+
+    <!--终端底度电量读取设置  Terminal bottom power setting-->
+    <string name="TerminalEleSet">终端底度电量设置</string>
+    <string name="TerminalEle">设置底度电量</string>
+    <array name="terminal_ele_set">
+        <item>A相正向有功电量底度</item>
+        <item>B相正向有功电量底度</item>
+        <item>C相正向有功电量底度</item>
+        <item>A相反向有功电量底度</item>
+        <item>B相反向有功电量底度</item>
+        <item>C相反向有功电量底度</item>
+        <item>A相第一象限无功电量底度</item>
+        <item>B相第一象限无功电量底度</item>
+        <item>C相第一象限无功电量底度</item>
+        <item>A相第二象限无功电量底度</item>
+        <item>B相第二象限无功电量底度</item>
+        <item>C相第二象限无功电量底度</item>
+        <item>A相第三象限无功电量底度</item>
+        <item>B相第三象限无功电量底度</item>
+        <item>C相第三象限无功电量底度</item>
+        <item>A相第四象限无功电量底度</item>
+        <item>B相第四象限无功电量底度</item>
+        <item>C相第四象限无功电量底度</item>
+    </array>
+</resources>

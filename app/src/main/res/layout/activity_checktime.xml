@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/color_titlebar_bg">
+
+        <ImageView
+            android:id="@+id/backBtn"
+            android:layout_width="@dimen/titlebar_height"
+            android:layout_height="@dimen/titlebar_height"
+            android:background="@drawable/btn_back_bg_selector"
+            android:src="@drawable/back_arrow" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/kCheckTime"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/titlebar_text_size" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/feature_item_horizontal_space"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/color_split_line" />
+
+        <include layout="@layout/checktime_item_device_time" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/color_split_line" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/feature_item_horizontal_space"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/color_split_line" />
+
+        <include layout="@layout/checktime_item_local_time" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/color_split_line" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/checkTimeBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/feature_item_size"
+        android:layout_marginRight="@dimen/feature_item_size"
+        android:layout_marginTop="@dimen/feature_item_horizontal_space"
+        android:background="@drawable/common_btn_bg_selector"
+        android:gravity="center"
+        android:text="@string/kCheckTime"
+        android:textColor="@color/color_white" />
+
+
+</LinearLayout>

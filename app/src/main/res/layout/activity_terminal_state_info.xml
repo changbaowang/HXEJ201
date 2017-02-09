@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cn.hxgroup.www.hhu.ui.feature.TerminalStateInfoActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/titlebar_height"
+        android:background="@color/color_titlebar_bg">
+
+        <ImageView
+            android:id="@+id/terminal_state_info_back_iv"
+            android:layout_width="@dimen/titlebar_height"
+            android:layout_height="@dimen/titlebar_height"
+            android:background="@drawable/btn_back_bg_selector"
+            android:src="@drawable/back_arrow" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/titlebar_height"
+            android:layout_toRightOf="@id/terminal_state_info_back_iv"
+            android:gravity="center"
+            android:text="@string/metermgn"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/titlebar_text_size" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/color_split_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/feature_item_size"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/kMeterType"
+                android:textColor="@color/color_common_btn_bg_normal" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/feature_item_size"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/kMeterTotal"
+                android:textColor="@color/color_common_btn_bg_normal" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/feature_item_size"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/kMeterSucceeful"
+                android:textColor="@color/color_common_btn_bg_normal" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/color_split_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/feature_item_size"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/kMeterRS485" />
+
+            <TextView
+                android:id="@+id/meter_state_info_rs_total_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/feature_item_size"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="0" />
+
+            <TextView
+                android:id="@+id/meter_state_info_rs_succeeful_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/feature_item_size"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="0" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/color_split_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/feature_item_size"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/kMeterRFPLC" />
+
+            <TextView
+                android:id="@+id/meter_state_info_plc_total_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/feature_item_size"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="0" />
+
+            <TextView
+                android:id="@+id/meter_state_info_plc_succeeful_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/feature_item_size"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="0" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/color_split_line" />
+    </LinearLayout>
+</RelativeLayout>

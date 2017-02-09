@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/dialog_message_bg_shape"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/message_dialog_title_Txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/color_dialog_text_title"
+            android:textSize="@dimen/dialog_text_title"
+            android:textStyle="bold"/>
+            <!--android:text="@string/kMessageDialogDefalutTitle"-->
+
+        <TextView
+            android:id="@+id/message_dialog_msg_Txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:lineSpacingExtra="5dp"
+            android:minHeight="60dp"
+            android:textColor="@color/color_dialog_text_content"
+            android:textSize="@dimen/dialog_text_content"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/color_split_line"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/message_dialog_left_Btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/dialog_left_btn_selector"
+            android:text="@string/kCancel"
+            android:textColor="@color/color_dialog_text_btn"
+            android:textSize="@dimen/dialog_text_btn"/>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/color_split_line"/>
+
+        <Button
+            android:id="@+id/message_dialog_right_Btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/dialog_right_btn_selector"
+            android:text="@string/kOk"
+            android:textColor="@color/color_dialog_text_btn"
+            android:textSize="@dimen/dialog_text_btn"/>
+
+    </LinearLayout>
+
+</LinearLayout>

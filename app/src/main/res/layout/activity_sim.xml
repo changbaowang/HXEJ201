@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cn.hxgroup.www.hhu.ui.feature.SIMActivity">
+
+    <RelativeLayout
+        android:id="@+id/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/titlebar_height"
+        android:background="@color/color_titlebar_bg">
+
+        <ImageView
+            android:id="@+id/point_sim_back_iv"
+            android:layout_width="@dimen/titlebar_height"
+            android:layout_height="@dimen/titlebar_height"
+            android:background="@drawable/btn_back_bg_selector"
+            android:src="@drawable/back_arrow" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/kSIM"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/titlebar_text_size" />
+
+    </RelativeLayout>
+    <!--头部-->
+    <LinearLayout
+        android:id="@+id/sim_state_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/action_bar"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/sim_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/common_margin2"
+            android:text="@string/kSIMState"
+            android:textColor="@color/color_common_btn_bg_normal"
+            android:textSize="@dimen/titlebar_text_size" />
+
+        <TextView
+            android:id="@+id/sim_title_value_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/common_margin1"
+            android:text="@string/kSIMNoAuthentication" />
+    </LinearLayout>
+    <!--认证前显示-->
+    <LinearLayout
+        android:id="@+id/sim_phone_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sim_state_ll"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sim_title_tv"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/sim_phone_name_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="@string/kSIMphone" />
+
+            <EditText
+                android:id="@+id/sim_phone_num_et"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginTop="@dimen/common_margin1"
+                android:layout_weight="2"
+                android:background="@drawable/edittext_self"
+                android:hint="13811112222"
+                android:inputType="number" />
+
+            <Button
+                android:id="@+id/sim_phone_num_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/common_btn_bg_selector"
+                android:lines="1"
+                android:text="@string/kSIMUsernum"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/dialog_text_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sim_title_tv"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/sim_phone1_name_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="@string/kSIMUsernum1" />
+
+            <EditText
+                android:id="@+id/sim_verification_num_et"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginTop="@dimen/common_margin1"
+                android:layout_weight="2"
+                android:background="@drawable/edittext_self"
+                android:inputType="number" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </LinearLayout>
+    <!--认证后显示-->
+    <LinearLayout
+        android:id="@+id/sim_has_verification_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sim_state_ll"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <TextView
+            android:id="@+id/sim_has_verification_imei_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/common_margin15"
+            android:text="@string/kSIMState" />
+
+        <TextView
+            android:id="@+id/sim_has_verification_ccid_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/common_margin15"
+            android:text="@string/kSIMState" />
+
+        <TextView
+            android:id="@+id/sim_has_verification_phone_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/common_margin15"
+            android:text="@string/kSIMState" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/sim_has_verification_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/common_margin1"
+        android:background="@drawable/common_btn_bg_selector"
+        android:text="@string/kSIMAuthing"
+        android:textColor="@color/color_white" />
+</RelativeLayout>

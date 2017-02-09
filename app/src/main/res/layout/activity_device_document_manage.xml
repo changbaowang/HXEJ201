@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/titlebar_height"
+        android:background="@color/color_titlebar_bg">
+
+        <ImageView
+            android:id="@+id/Device_Document_Manage_backiv"
+            android:layout_width="@dimen/titlebar_height"
+            android:layout_height="@dimen/titlebar_height"
+            android:background="@drawable/btn_back_bg_selector"
+            android:src="@drawable/back_arrow" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/DeviceDocumentManage"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/titlebar_text_size" />
+
+    </RelativeLayout>
+</LinearLayout>

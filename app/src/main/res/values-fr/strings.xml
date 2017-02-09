@@ -1,0 +1,414 @@
+<resources>
+    <string name="app_name">MIO tools</string>
+
+    <string name="kConnection">Connecter</string>
+    <string name="kFeature">Fonction</string>
+    <string name="kSettings">Installer</string>
+    <string name="kChannel">Interface de communication série</string>
+    <string name="kWifi">Connecter le wifi</string>
+    <string name="kSet">Configurer</string>
+    <string name="kDisConnect">Couper la connection </string>
+    <string name="kSearch">Connecté</string>
+    <string name="kConnected">Connecté</string>
+    <string name="kVersion">Version actuelle</string>
+    <string name="kConnectionWifi">Connectez  le wifi,par exemple:HE... </string>
+    <!-- 功能-->
+    <string name="Instructions">AAP Introduction de fonctions</string>
+    <string name="kRealData">Données en temps réel</string>
+    <string name="kRename">Modifier le nom</string>
+    <string name="kSetPN">Configurer PN</string>
+    <string name="kVersionManage">Gestion de la version</string>
+    <string name="kDeviceOperation">Fonctionnement des relais</string>
+    <string name="kCheckTime">Etalonnage du temps</string>
+    <string name="kDeviceManage">Gestion des documents du compteur</string>
+    <string name="WIFIset">Installation du wifi</string>
+    <string name="GPSset">Installer GPS</string>
+    <string name="DataManagement">Gestion de données</string>
+    <string name="getGPS">Rafraîchir la position du terminal</string>
+    <string name="GPSlocation">Repérer la position actuelle</string>
+    <string name="kReset">Réinitialisation</string>
+    <string name="kLocalUpdate">Mise à niveau local</string>
+    <string name="kTerminalInfo">Informations sur l\'état du terminal</string>
+    <string name="kTerminalVersionInfo">Informations sur la version du terminal</string>
+    <string name="TerminalCentralizedMeterStatInfo">Informations d\'état de la lecture des compteurs centralisé du terminal </string>
+    <string name="kTerminalState">L\'état du terminal</string>
+    <string name="DeviceDocumentManage">Gestion des documents du compteur</string>
+    <string name="NewPowerIndication">L\'indication actuelle de l\'énergie active positive</string>
+    <string name="ForwardActivePower">Données d\'arrêt par jour </string>
+    <string name="PointBitmap">Position de point de mesure efficace</string>
+    <string name="meterInfo">Informations du compteur</string>
+    <string name="metermgn">Gestion du compteur</string>
+    <string name="TransformerMonitoring">Paramètres d\'entrée de l\'état terminal de surveillance de transformateur</string>
+    <string name="TermianalEle">Fin de batterie du terminal</string>
+
+    <!-- 复位功能-->
+    <string name="kConfirmReset">Confirmer la réinitialisation?</string>
+    <string name="kResetData">Initialisation de la zone de données</string>
+    <string name="kResetDevice">Initialisation du matériel</string>
+    <string name="kResetAll">Paramètres(sauf des paramètres relatif de la communication du système )</string>
+
+    <!-- 版本管理-->
+    <string name="kManufacturer">Code du fabricant</string>
+    <string name="kDeviceCode">Nombre de périphériques</string>
+    <string name="kSoftWareVersion">Numéro de version de logiciel terminal</string>
+    <string name="kDeviceSoftWareDate">Date d\'avancement de logiciel terminal</string>
+    <string name="kDeviceCapacity">Code des Informations de la capacité de configuration du terminal</string>
+    <string name="kDeviceProtocolVersion">Numéro de version de protocole de communication terminal</string>
+    <string name="kDeviceHardWareVersion">Numéro de version de matériel du terminal</string>
+    <string name="kDeviceHardWareDate">Date d\'avancement de matériel terminal</string>
+    <string name="kCommunicationModuleSoftWareVersion">Numéro de version de logiciel de test interne de module de communication descendant</string>
+
+    <!-- 继电器操作-->
+    <string name="kRemoteSwitchOff">Fermature à distance</string>
+    <string name="kAllowSwitchOn">Autoriser la fermeture</string>
+    <string name="kRemoteSwitchOn">fermer à distance</string>
+    <string name="kBreakerState">Etat du commutateur du briseur</string>
+    <string name="OperationRlue1">1)Temps des coupures d\'électricité:portée de valeur numérique 0～15,unité:0.5h,quand le valeur numérique est 0,Il représente des coupures d\'électricité urgent qui reste longtemps,il ne supprime pas automatique l\'état des coupures d\'électricité;quand le valeur numérique n\'est pas 0,limiter selon le temps des coupures d\'électricité</string>
+    <string name="OperationRlue2">2)Temps de retard d\'alarme:portée de valeur numérique 0～15,unité:min,quand le valeur numérique est 0,on doit fermer immédiatement;quand le valeur numérique n\'est pas 0,Selon l\'heure d\'alarme installé pour l\'alarme.</string>
+    <string name="OperationRlue3">1)Temps de retard d\'alarme:Temps de retard d\'alarme:portée de valeur numérique 0～15,unité:min,quand le valeur numérique est 0,on doit fermer immédiatement;quand le valeur numérique n\'est pas 0,Selon l\'heure d\'alarme installé pour l\'alarme.</string>
+
+
+    <!-- 对时-->
+    <string name="kDeviceTime">Temps de périphérique</string>
+    <string name="kEditCheckTime">Editer le temps de vérification</string>
+
+    <!--SIM卡认证-->
+    <string name="kSIMState">Etat :</string>
+    <string name="kSIM">Authentification de la  carte SIM</string>
+    <string name="kSIMNoAuthentication">Authenticate pas encore</string>
+    <string name="kSIMNoFaction">Ne supporte pas cette fonction</string>
+    <string name="kSIMAuthentication">Authentifier</string>
+    <string name="kSIMAuthenticationHas">Authentifié</string>
+    <string name="kSIMphone">Numéro de téléphone :</string>
+    <string name="kSIMInfo">Informations d\'authentification :</string>
+    <string name="kSIMAuthing">Effectuer une authentification</string>
+    <string name="kSIMUsernum">Obtenir le code</string>
+    <string name="kSIMUsernum1">Code : </string>
+    <string name="kSIMSucceed">Authentification est réussie </string>
+    <string name="kSIMFail">Authentification a échoué</string>
+    <string name="kSIMTime">Attendre :</string>
+    <string name="kSIMinputPhone">Entrez le numéro</string>
+    <string name="kSIMVerification">Entrez le code</string>
+    <string name="kSIMSendMsg">【HEXING】Code de la carte SIM </string>
+
+    <!-- GPS-->
+    <string name="kLongitude">Longitude :</string>
+    <string name="kLatitude">Latitude :</string>
+    <!-- wifi设置-->
+    <string name="WIFIname">Nom de WIFI</string>
+    <string name="setWIFI">Installation de WIFI</string>
+    <string name="setWIFIname">Installer le nom de WIFI</string>
+    <string name="WIFIpassword">Installer le code de WIFI</string>
+    <string name="oldpassword">Entrez le code d\'origine</string>
+    <string name="newpassword">Entrez le nouveau code </string>
+    <string name="newpassword2">Confirmer le nouveau code</string>
+    <!--ip设置-->
+    <string name="setIP">Installer IP</string>
+    <string name="mainIP">IP de maître</string>
+    <string name="mainIPset">Installation de IP de maître</string>
+    <string name="terminalIP">IP terminal </string>
+    <string name="terminalIPset">Installation de IP terminal</string>
+    <string name="agentIp">Adresse de serveur de procuration</string>
+    <string name="MainIPaddress">Adresse principale de IP</string>
+    <string name="AlternateIPaddress">Adresse  alternate de IP</string>
+    <string name="MianIPPort">Port</string>
+    <string name="Subnetmask">Masque de sous-réseau</string>
+    <string name="Gateway">Passerelle</string>
+    <string name="Proxyservertype">Type de serveur de procuration </string>
+    <string name="Proxyserveraddress">Adresse de serveur de procuration </string>
+    <string name="Proxyserverconnectionmode">Méthode de connection de serveur de procuration </string>
+    <string name="UserName">Nom d\'utilisateur</string>
+    <string name="Password">Code</string>
+    <string name="Terminallistenerport">Port de communication surveillante</string>
+    <string name="IPaddress">Adresse de IP</string>
+
+    <!-- 本地升级 -->
+    <string name="kSelectFile">Choisir les fichiers</string>
+    <string name="kNoFile">Fichiers sans mettre à niveau</string>
+    <string name="kTerminalVersion">Version de terminal</string>
+    <string name="kLatestVersion">version la plus récente</string>
+    <string name="kNewVersion">La nouvelle version</string>
+    <string name="kClient">HXEJ200Client</string>
+    <string name="kUpgrade">Un terminal de mise à jour dans une minute......</string>
+    <string name="kTransmit">Transmission de données</string>
+    <string name="kUpdateInfo">Des informations de mise à jour</string>
+    <string name="kLater">plus tard</string>
+    <string name="kUpdateImmediately">Mise à jour immédiate</string>
+    <string name="kNoUpdate">Pas de mise à jour</string>
+
+    <!--变压器监控终端状态量输入参数-->
+    <string name="kStateFlag">Drapeau de propriété d\'état</string>
+    <string name="kPhysicalQuantityType">Type physique correspondante</string>
+
+    <!-- settings-->
+    <string name="kWifiFilter">Filtre de Wifi</string>
+    <string name="kUpdate">Mettre à jour</string>
+    <string name="kTimeoutSetting">Installation dépasse le temps</string>
+    <string name="kSecond">S</string>
+
+    <string name="kCheckUpdateTip">Vérifiez que la connexion réseau est disponible avant la vérification de mise à jour</string>
+    <string name="kDefault">Récupérer le consentement</string>
+    <string name="kCheckUpdate">Vérifier et mettre à jour</string>
+    <string name="kServerAddress">Adresse du serveur</string>
+
+    <string name="kCheckTimeInvalid">Format du temps est incorrect, entrez le format correct, comme:1970/01/01 08:00:00</string>
+    <string name="kSetIpInvalid">Format de données est incorrect, entrez le format correct, comme:192.168.0.0,或192.168.0.0.1</string>
+    <string name="kSetGps">Format de données est incorrect, entrez le format correct, comme:04:1122.3344</string>
+    <string name="kCancel">Annuler</string>
+    <string name="kOk">Conformer</string>
+    <string name="kTip">Impliquer</string>
+    <!-- 电流电压信息 -->
+    <string name="kKwAll">Puissance active totale actuelle</string>
+    <string name="kKwA">Puissance active de la phase A actuelle</string>
+    <string name="kKwB">Puissance active de la phase B actuelle</string>
+    <string name="kKwC">Puissance active de la phase C actuelle</string>
+
+    <string name="kKvarAll">Puissance réactive totale actuelle</string>
+    <string name="kKvarA">Puissance réactive de la phase A actuelle</string>
+    <string name="kKvarB">Puissance réactive de la phase B actuelle</string>
+    <string name="kKvarC">Puissance réactive de la phase C actuelle</string>
+
+    <string name="kFactorAll">Facteur de puissance total actuel</string>
+    <string name="kFactorA">Facteur de puissance total de la phase A actuel</string>
+    <string name="kFactorB">Facteur de puissance total de la phase B actuel</string>
+    <string name="kFactorC">Facteur de puissance total de la phase C actuel</string>
+
+    <string name="kKvaAll">Puissance apparente totale actuelle</string>
+    <string name="kKvaA">Puissance apparente totale de la phase A actuelle </string>
+    <string name="kKvaB">Puissance apparente totale de la phase B actuelle </string>
+    <string name="kKvaC">Puissance apparente totale de la phase C actuelle </string>
+
+    <string name="kIA">Courant de la phase A actuel</string>
+    <string name="kIB">Courant de la phase B actuel</string>
+    <string name="kIC">Courant de la phase C actuel</string>
+    <string name="kIZero">Courant homopolaire actuel</string>
+
+    <string name="kUA">Tension de la phase A actuelle</string>
+    <string name="kUB">Tension de la phase B actuelle</string>
+    <string name="kUC">Tension de la phase C actuelle</string>
+    <string-array name="realdata_listview">
+        <item>Puissance active totale actuelle</item>
+        <item>Puissance active de la phase A actuelle</item>
+        <item>Puissance active de la phase B actuelle</item>
+        <item>Puissance active de la phase C actuelle</item>
+        <item>Puissance réactive totale actuelle</item>
+        <item>Puissance réactive de la phase A actuelle</item>
+        <item>Puissance réactive de la phase B actuelle</item>
+        <item>Puissance réactive de la phase C actuelle</item>
+        <item>Facteur de puissance total actuel</item>
+        <item>Facteur de puissance total de la phase A actuel</item>
+        <item>Facteur de puissance total de la phase B actuel</item>
+        <item>Facteur de puissance total de la phase C actuel</item>
+        <item>Tension de la phase A actuelle</item>
+        <item>Tension de la phase B actuelle</item>
+        <item>Tension de la phase C actuelle</item>
+        <item>Courant de la phase A actuel</item>
+        <item>Courant de la phase B actuel</item>
+        <item>Courant de la phase C actuel</item>
+        <item>Courant homopolaire actuel</item>
+        <item>Puissance apparente totale actuelle</item>
+        <item>Puissance apparente totale de la phase A actuelle</item>
+        <item>Puissance apparente totale de la phase B actuelle</item>
+        <item>Puissance apparente totale de la phase C actuelle</item>
+        <item>Ua L\'angle de phase</item>
+        <item>Ub L\'angle de phase</item>
+        <item>Uc L\'angle de phase</item>
+        <item>Ia L\'angle de phase</item>
+        <item>Ib L\'angle de phase</item>
+        <item>Ic L\'angle de phase</item>
+    </string-array>
+    <string name="setSucceed">Installer avec succès</string>
+    <string name="allowClose">Autoriser la fermeture？</string>
+    <string name="Allowreset">Autoriser la réinitialisation？</string>
+
+    <!-- Toaast  -->
+    <string name="wifiName">Entrez le nom de wifi</string>
+    <string name="NameNotChange">Le nom ne change pas</string>
+    <string name="NameChangeConnectAgain">Le nom a changé, connecter à nouveau </string>
+    <string name="PwsChangeConnectAgain">Changement de mot de passe, reconnecter</string>
+    <string name="OldPWS">Entrez le mode d\'origine</string>
+    <string name="PWSlength">Entrez le nouveau mode plus de 8 caractères</string>
+    <string name="newPWSnotnull">Le nouveau mode ne peut pas être vide</string>
+    <string name="newPWSlength">Longeur du nouveau code est incorrect</string>
+    <string name="pwswrong">Code est  incorrect ou deux codes ne sont pas identiques</string>
+    <string name="Query">Consulter</string>
+    <string name="AddMeter">Compteurs supplémentaires</string>
+    <string name="kTime">Entrez le temps</string>
+    <string name="kLoadFail">Le positionnement de l\'échec</string>
+    <string name="kFresh">Actualiser avec succès</string>
+
+    <!--添加表计-->
+    <string name="kMeterNum">Numéro de points de mesure restant:</string>
+    <string name="kMeterNum2">Numéro de points de mesure:</string>
+    <string name="kMeterchoiNum">Choisir le numéro de points de mesure:</string>
+    <string name="kMeterAddSucceed">Ajouter avec succès</string>
+    <string name="kMeterConnPort">Interface de communication</string>
+    <string name="kMeterConnAddress">Adresse de communication</string>
+    <string name="kMeterRate">Bauds</string>
+    <string name="kMeterMunicationProtocol">Protocole de communication</string>
+    <string name="kMeterDefault">Consentement</string>
+    <string name="kMeterDel">Supprimer ce tableau</string>
+    <string name="kMeterDelSucceed">Supprimer avec succès</string>
+    <string name="kMeterType">Type</string>
+    <string name="kMeterTotal">TOTAL</string>
+    <string name="kMeterSucceeful">Succès</string>
+    <string name="kMeterRS485">RS485</string>
+    <string name="kMeterRFPLC">RF/PLC</string>
+
+
+    <string-array name="terminal_state_listview">
+        <item>Etat de fonctionnement de GPRS ascendant</item>
+        <item>Etat de fonctionnement de PLC descendant</item>
+        <item>Relever le porte-copie ,table d\'état sans fil</item>
+        <item>Relever l\'état du compteur 485</item>
+    </string-array>
+
+    <string-array name="version_info_listview">
+        <item>Adresse du module</item>
+        <item>Code du fabricant</item>
+        <item>Code de puce</item>
+        <item>Date de version</item>
+        <item>Version</item>
+    </string-array>
+
+    <string name="kterminal_info_num">Numéro de blocs de données</string>
+    <string-array name="terminal_state_info_listview">
+        <item>Numéro de l\'interface de communication terminal</item>
+        <item>Nombre du compteur relevé</item>
+        <item>Drapeau de  l\'état de lecture du compteur actuel </item>
+        <item>Nombre de blocs de relever le compteur avec succès </item>
+        <item>Nombre de blocs de relever le compteur important avec succès </item>
+        <item>Heure de départ pour relever le compteur</item>
+        <item>Heure de fini pour relever le compteur</item>
+    </string-array>
+    <!--IPset spinner-->
+    <string-array name="IpsetSpinner1">
+        <item>Utilise pas le serveur de procuration</item>
+        <item>Procuration de http connect</item>
+        <item>Procuration de socks4</item>
+        <item>Procuration de socks5</item>
+    </string-array>
+    <string-array name="IpsetSpinner2">
+        <item>Pas besoin de vérifier</item>
+        <item>Il nécessite un nom d\'utilisateur/code</item>
+    </string-array>
+
+    <!--日冻结正向有功电能示值-->
+    <string name="TimeFormart">comme:20160819</string>
+    <string name="kDataTimeScale">Temps de données du gel par jour</string>
+    <string name="TerminalMeterReadingTime">Temps de la lecture teminal</string>
+    <string name="RateNumber">Nombre des tarifs</string>
+    <string name="TotalPowerIndication">Numérique de puissance positive et active totale</string>
+    <string name="Rate">Tarifs</string>
+    <string name="PowerIndication">Numérique de puissance positive et active</string>
+    <string name="MeterNotExist">Le compteur n\'existe pas</string>
+
+    <!--终端集中抄表状态信息-->
+    <string name="NumberOfDataBlocks">Nombre de blocs de données</string>
+    <!--有效测量点位图-->
+    <string name="kPointBitmapNumber">Nombre du compteur/Configuration de l\'appareil d\'échantillonnage </string>
+
+
+    <string-array name="kPointBitmapListview">
+        <item>Numéro du compteur/Configuration de l\'appareil d\'échantillonnage </item>
+        <item>Numéro de point de mesure pertinente</item>
+        <item>Vitesse de communication</item>
+        <item>Interface de communication</item>
+        <item>Type de protocole de communication</item>
+        <item>Adresse de communication</item>
+        <item>Code de communication</item>
+        <item>Nombre de tarifs d\'électricité</item>
+        <item>Nombre d\'entier et décimal de l\'indication de l\'énergie active </item>
+        <item>Adresse de communication de collectionneur</item>
+        <item>Compteur électrique de type</item>
+    </string-array>
+    <!--表记档案管理-->
+    <string name="Spare">Alternatives</string>
+    <string name="MeterId">Numéro du compteur</string>
+    <string name="MeterPn">Numéro de point de mesure</string>
+    <string name="MeterType">Type</string>
+    <string name="MeterUpdate">Mettre à jour la liste</string>
+    <string name="MeterState">Etat de lecture du compteur</string>
+    <string name="MeterMore">more</string>
+    <string name="Meterhite">Impliquer</string>
+    <string name="MeterAddData">Chargement des données...</string>
+    <string name="MeterDelData">Suppression de données, attendez....</string>
+    <string name="MeterdelMeter">Confirmer supprimer la table </string>
+    <string name="MeterDetails">Détails</string>
+
+
+    <!--后来补充-->
+    <string name="restrictEleTime">De limitation de temps</string>
+    <string name="restrictDelayTime">Le temps de retard d\'alarme</string>
+    <string name="PleaseEnterData">S\'il vous plaît, des données d\'entrée</string>
+    <string name="DataShouldBeLessThan16">Les données doivent être inférieure à 16</string>
+    <string name="MesSendSucceed">Envoyer un message de succès</string>
+    <string name="MesSendFail">La transmission a échoué</string>
+    <string name="MesReceiveSucceed">L\'appelant reçoit avec succès</string>
+    <string name="MeterAddress">Saisissez l\'adresse de 12 bits qui ne peut pas être 0</string>
+
+    <!--Loagin-->
+    <string name="UsernamePassIsEmpty">Nom d\'utilisateur ou le mot de passe est vide</string>
+    <string name="UsernamePassIsError">Pas de nom d\'utilisateur ou le mot de passe</string>
+
+    <!--APP功能介绍-->
+    <array name="function">
+        <item>De Fonctionnement de Relais</item>
+        <item>Le Temps</item>
+        <item>Gestion de compteur</item>
+        <item>RESET</item>
+        <item>La carte d\'authentification SIM</item>
+        <item>IP Disposé</item>
+        <item>WIFI Disposé</item>
+        <item>GPS Disposé</item>
+    </array>
+
+    <!-- 数据管理-->
+    <string name="ManageData">Gestion de données</string>
+    <string name="AbnormalOperation">Fonctionnement anormal</string>
+    <string name="SaveSucceed">Sauvé avec succès</string>
+    <string name="DataExist">Il existe déjà</string>
+    <string name="SaveData">Sauver Données</string>
+    <string name="NoData">Sans données</string>
+    <string name="ExportRealData">exportation de données réelles</string>
+    <string name="ExportFrozenData">Exporter Geler Data</string>
+    <string name="ClearSaveData">Clair Sauver Data</string>
+    <string name="GetTerminalFrozenData">Le terminal de données de congélation</string>
+    <string name="ChoiceDate">Veuillez sélectionner le temps</string>
+    <string name="ReadingData">La lecture de données</string>
+    <string name="PleaseWait">Un instant, s\'il vous plaît....</string>
+    <string name="TotleCounter">Total</string>
+    <string name="ImpDateRule">Le temps de fin peut être inférieure à un temps de début</string>
+    <string name="StrTime">Heure de début</string>
+    <string name="EndTime">Heure de fin</string>
+    <string name="ReadData">Lire les données</string>
+    <string name="ExportData">Exporter des données</string>
+    <string name="ClearData">Effacer les données</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_terminal_state_info">TerminalStateInfoActivity</string>
+
+    <!--终端底度电量读取设置  Terminal bottom power setting-->
+    <string name="TerminalEleSet">Terminal de puissance inférieure est disposée</string>
+    <string name="TerminalEle">Le fond degrés d\'électricité</string>
+    <array name="terminal_ele_set">
+        <item>L1 Active Positive de la Partie Inférieure</item>
+        <item>L2 Active Positive de la Partie Inférieure</item>
+        <item>L3 Active Positive de la Partie Inférieure</item>
+        <item>L1 Inverse de la Partie Inférieure de Puissance Active</item>
+        <item>L2 Inverse de la Partie Inférieure de Puissance Active</item>
+        <item>L3 Inverse de la Partie Inférieure de Puissance Active</item>
+        <item>L1 Premier Quadrant de la Puissance Réactive de la Partie Inférieure</item>
+        <item>L2 Premier Quadrant de la Puissance Réactive de la Partie Inférieure</item>
+        <item>L3 Premier Quadrant de la Puissance Réactive de la Partie Inférieure</item>
+        <item>L1 Second Quadrant de la Puissance Réactive de la Partie Inférieure</item>
+        <item>L2 Second Quadrant de la Puissance Réactive de la Partie Inférieure</item>
+        <item>L3 Second Quadrant de la Puissance Réactive de la Partie Inférieure</item>
+        <item>L1 Troisième Quadrants de la Puissance Réactive de la Partie Inférieure</item>
+        <item>L2 Troisième Quadrants de la Puissance Réactive de la Partie Inférieure</item>
+        <item>L3 Troisième Quadrants de la Puissance Réactive de la Partie Inférieure</item>
+        <item>L1 Quatrième Quadrants de la Puissance Réactive de la Partie Inférieure</item>
+        <item>L2 Quatrième Quadrants de la Puissance Réactive de la Partie Inférieure</item>
+        <item>L3 Quatrième Quadrants de la Puissance Réactive de la Partie Inférieure</item>
+    </array>
+</resources>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.feature.InstructionsActivity">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/color_titlebar_bg">
+
+        <ImageView
+            android:id="@+id/backIv"
+            android:layout_width="@dimen/titlebar_height"
+            android:layout_height="@dimen/titlebar_height"
+            android:background="@drawable/btn_back_bg_selector"
+            android:src="@drawable/back_arrow" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/Instructions"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/titlebar_text_size" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/instructions_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"></ListView>
+</RelativeLayout>

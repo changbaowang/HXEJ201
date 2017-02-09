@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_term_fro_data"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cn.hxgroup.www.hhu.ui.feature.TermFroDataActivity">
+
+    <RelativeLayout
+        android:id="@+id/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/titlebar_height"
+        android:background="@color/color_titlebar_bg">
+
+        <ImageView
+            android:id="@+id/setting_termial_data_back_iv"
+            android:layout_width="@dimen/titlebar_height"
+            android:layout_height="@dimen/titlebar_height"
+            android:background="@drawable/btn_back_bg_selector"
+            android:src="@drawable/back_arrow" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/ManageData"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/titlebar_text_size" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/terfor_data_strDate"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/action_bar"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/terfor_data_strDate_et"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:focusable="false" />
+
+        <Button
+            android:id="@+id/terfor_data_strDate_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:layout_weight="2"
+            android:background="@drawable/common_btn_bg_selector"
+            android:text="@string/StrTime"
+            android:textColor="@color/color_white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/terfor_data_endDate"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/terfor_data_strDate"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/terfor_data_endDate_et"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:focusable="false" />
+
+        <Button
+            android:id="@+id/terfor_data_endDate_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:layout_weight="2"
+            android:background="@drawable/common_btn_bg_selector"
+            android:text="@string/EndTime"
+            android:textColor="@color/color_white" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/terfor_data_query"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/terfor_data_endDate"
+        android:layout_margin="10dp"
+        android:background="@drawable/common_btn_bg_selector"
+        android:padding="5dp"
+        android:text="@string/Query"
+        android:textColor="@color/color_white" />
+
+    <TextView
+        android:id="@+id/terfor_data_num_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/terfor_data_query"
+        android:gravity="center_horizontal"
+        android:visibility="invisible" />
+
+    <ListView
+        android:id="@+id/terfor_data_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/terfor_data_num_tv"
+        android:layout_marginBottom="40dp"></ListView>
+
+    <Button
+        android:id="@+id/terfor_data_save"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/common_btn_bg_selector"
+        android:padding="5dp"
+        android:text="@string/SaveData"
+        android:textColor="@color/color_white"
+        android:visibility="invisible" />
+</RelativeLayout>

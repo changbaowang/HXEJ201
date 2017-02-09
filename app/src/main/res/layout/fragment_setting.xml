@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!-- wifi设置 -->
+        <include layout="@layout/setting_item_wifi" />
+        <!-- 检查更新设置 -->
+        <include layout="@layout/setting_item_update" />
+
+        <include layout="@layout/setting_item_timeout" />
+
+        <!--WIFI设置-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="@dimen/feature_item_vertical_space"
+            android:background="@color/color_split_line" />
+
+        <TextView
+            android:id="@+id/setting_setwifi_tv"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/feature_item_height"
+            android:background="@drawable/common_item_bg_selector"
+            android:drawableLeft="@drawable/setting_wifi"
+            android:drawablePadding="20dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/feature_item_horizontal_space"
+            android:text="@string/setWIFI" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/color_split_line" />
+
+        <!--IP设置-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="@dimen/feature_item_vertical_space"
+            android:background="@color/color_split_line" />
+
+        <TextView
+            android:id="@+id/setting_setip_tv"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/feature_item_height"
+            android:background="@drawable/common_item_bg_selector"
+            android:drawableLeft="@drawable/setting_ip"
+            android:drawablePadding="20dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/feature_item_horizontal_space"
+            android:text="@string/setIP" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/color_split_line" />
+        <!--GPS设置-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="@dimen/feature_item_vertical_space"
+            android:background="@color/color_split_line" />
+
+        <TextView
+            android:id="@+id/setting_setgps_tv"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/feature_item_height"
+            android:background="@drawable/common_item_bg_selector"
+            android:drawableLeft="@drawable/setting_gps"
+            android:drawablePadding="20dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/feature_item_horizontal_space"
+            android:text="@string/GPSset" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/color_split_line" />
+
+        <!--终端底度电量读取设置-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="@dimen/feature_item_vertical_space"
+            android:background="@color/color_split_line" />
+
+        <TextView
+            android:id="@+id/setting_terminal_ele_tv"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/feature_item_height"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/common_item_bg_selector"
+            android:drawableLeft="@drawable/setting_terele"
+            android:drawablePadding="20dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/feature_item_horizontal_space"
+            android:text="@string/TerminalEle" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="10dp" />
+        <!--数据管理-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/color_split_line" />
+
+        <TextView
+            android:id="@+id/setting_data_tv"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/feature_item_height"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/common_item_bg_selector"
+            android:drawableLeft="@drawable/setting_data"
+            android:drawablePadding="20dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/feature_item_horizontal_space"
+            android:text="@string/DataManagement" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/color_split_line" />
+    </LinearLayout>
+</ScrollView>

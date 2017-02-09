@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_terminal_ele_set"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cn.hxgroup.www.hhu.ui.feature.TerminalEleSetActivity">
+
+    <RelativeLayout
+        android:id="@+id/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/titlebar_height"
+        android:background="@color/color_titlebar_bg">
+
+        <ImageView
+            android:id="@+id/action_bar_back_iv"
+            android:layout_width="@dimen/titlebar_height"
+            android:layout_height="@dimen/titlebar_height"
+            android:background="@drawable/btn_back_bg_selector"
+            android:src="@drawable/back_arrow" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/TerminalEleSet"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/titlebar_text_size" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/terminal_ele_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/action_bar"
+        android:layout_marginBottom="60dp"></ListView>
+
+    <Button
+        android:id="@+id/terminal_ele_set_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/common_btn_bg_selector"
+        android:padding="5dp"
+        android:text="@string/TerminalEle"
+        android:textColor="@color/color_white" />
+</RelativeLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!-- 实时数据显示 -->
+        <include layout="@layout/feature_item_realdata" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/feature_item_vertical_space"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/color_split_line" />
+
+            <include layout="@layout/feature_item_deviceoperation" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="@dimen/feature_item_horizontal_space"
+                android:background="@color/color_split_line" />
+
+            <include layout="@layout/feature_item_checktime" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="@dimen/feature_item_horizontal_space"
+                android:background="@color/color_split_line" />
+
+            <include layout="@layout/feature_item_devicemanage" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/color_split_line" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/feature_item_vertical_space"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/color_split_line" />
+
+            <include layout="@layout/feature_item_versionmanage" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="@dimen/feature_item_horizontal_space"
+                android:background="@color/color_split_line" />
+
+            <include layout="@layout/feature_item_reset" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="@dimen/feature_item_horizontal_space"
+                android:background="@color/color_split_line" />
+
+            <include layout="@layout/feature_item_localupdate" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="@dimen/feature_item_horizontal_space"
+            android:background="@color/color_split_line" />
+
+        <TextView
+            android:id="@+id/feature_Instructions_tv"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/feature_item_height"
+            android:background="@drawable/common_item_bg_selector"
+            android:drawableLeft="@drawable/feature_app"
+            android:drawablePadding="20dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="@string/Instructions" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/color_split_line" />
+    </LinearLayout>
+</ScrollView>

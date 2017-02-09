@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/color_titlebar_bg">
+
+        <ImageView
+            android:id="@+id/setting_gpsset_backiv"
+            android:layout_width="@dimen/titlebar_height"
+            android:layout_height="@dimen/titlebar_height"
+            android:background="@drawable/btn_back_bg_selector"
+            android:src="@drawable/back_arrow" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/GPSset"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/titlebar_text_size" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/common_margin1"
+        android:layout_marginTop="@dimen/common_margin1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/common_margin1"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="@string/kLongitude"
+            android:textColor="@color/color_common_btn_bg_pressed"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/gps_set_tv1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/common_margin1"
+            android:layout_weight="3"
+            android:textSize="@dimen/dialog_text_title" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/common_margin1"
+        android:layout_marginTop="@dimen/common_margin1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/common_margin1"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="@string/kLatitude"
+            android:textColor="@color/color_common_btn_bg_pressed"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/gps_set_tv2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/common_margin1"
+            android:layout_weight="3"
+            android:textSize="@dimen/dialog_text_title" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/gps_get_terminal_gps_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/common_margin1"
+        android:background="@drawable/common_btn_bg_selector"
+        android:text="@string/getGPS"
+        android:textColor="@color/color_white" />
+
+    <Button
+        android:id="@+id/gps_set_new_gps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/common_margin1"
+        android:background="@drawable/common_btn_bg_selector"
+        android:text="@string/GPSlocation"
+        android:textColor="@color/color_white" />
+
+    <Button
+        android:id="@+id/gps_set_setbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/common_margin1"
+        android:background="@drawable/common_btn_bg_selector"
+        android:text="@string/GPSset"
+        android:textColor="@color/color_white" />
+</LinearLayout>

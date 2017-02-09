@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <Button
+        android:id="@+id/channelBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/kChannel"/>
+
+    <Button
+        android:id="@+id/wifiBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/kWifi"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/connectBtn"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="@dimen/feature_item_height"
+        android:background="@drawable/common_btn_bg_selector"
+        android:layout_margin="20dp"
+        android:textColor="@color/color_white"
+        android:text="@string/kConnection"/>
+
+</LinearLayout>

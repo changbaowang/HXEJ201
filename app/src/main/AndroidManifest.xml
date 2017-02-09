@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.hxgroup.www.hhu">
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- GPS定位权限 2016.8.3 -->
+    <!-- 粗略定位授权 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 精细定位授权 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 发送短信   2016.9.3  -SIM认证 -->
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <meta-data
+        android:name="UMENG_CHANNEL"
+        android:value="${UMENG_CHANNEL_VALUE}" />
+    <application
+        android:name=".app.HHUApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".ui.mainview.LoginActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.settings.WifiFilterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.feature.LocalUploadActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.settings.AppUpdateActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.feature.CheckTimeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.feature.DeviceDocumentManageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.feature.DeviceOperationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.feature.RealDataActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.feature.VersionManageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.settings.ServerEditActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.feature.ResetActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.TimeOutSelectActivity"
+            android:theme="@style/CustomDialogStyle" />
+        <activity
+            android:name=".ui.feature.FileSelectActivtiy"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.feature.DeviceOperation2Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.feature.WIFIsetActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.feature.IPsetActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+        <activity
+            android:name=".ui.feature.TerminalStateActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.feature.TerminalStateInfoActivity"
+            android:label="@string/title_activity_terminal_state_info"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.feature.ActivePowerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.feature.ActivePowerValueActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+        <activity
+            android:name=".ui.feature.GpsSetActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.feature.PointBitmapActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.feature.TransformerMonitoringActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.feature.TerminalEleActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.feature.MeterInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.feature.AddMeterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.feature.Meter2Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.feature.SIMActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.feature.VersionInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.mainview.MainViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.feature.Instructions2Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.feature.InstructionsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.feature.GuideActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.feature.ManageDataActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.feature.TerminalEleSetActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ui.feature.TermFroDataActivity" />
+        <activity android:name=".ui.feature.PowerActivity"></activity>
+    </application>
+
+</manifest>

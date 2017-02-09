@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/version_item_manufacturer_ll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/common_item_bg_selector"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        style="@style/version_item_layout_style">
+
+
+        <TextView
+            style="@style/version_item_title_style"
+            android:text="@string/kDeviceCode"/>
+
+        <TextView
+            android:id="@+id/version_item_devicecode_tv"
+            style="@style/version_item_content_style"
+            android:text="@string/kDeviceCode"/>
+
+    </LinearLayout>
+</LinearLayout>

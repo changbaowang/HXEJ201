@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cn.hxgroup.www.hhu.ui.feature.IPsetActivity">
+
+    <RelativeLayout
+        android:id="@+id/ipset_action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/color_titlebar_bg">
+
+        <ImageView
+            android:id="@+id/ipset_backiv"
+            android:layout_width="@dimen/titlebar_height"
+            android:layout_height="@dimen/titlebar_height"
+            android:background="@drawable/btn_back_bg_selector"
+            android:src="@drawable/back_arrow" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/setIP"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/titlebar_text_size" />
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:id="@+id/setip_scrol_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/setwifi_setmainip_ll"
+        android:layout_below="@id/ipset_action_bar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_margin15"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/common_margin15"
+                android:text="@string/mainIP"
+                android:textColor="@color/color_wifi_text_seleccted"
+                android:textSize="@dimen/titlebar_text_size" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/color_split_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/common_margin15"
+                    android:layout_weight="1"
+                    android:focusable="true"
+                    android:text="@string/MainIPaddress" />
+
+                <EditText
+                    android:id="@+id/ipset_mainip_et"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="number"
+                    android:textSize="@dimen/dialog_text_title" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/common_margin15"
+                    android:layout_weight="1"
+                    android:focusable="true"
+                    android:text="@string/MianIPPort" />
+
+                <EditText
+                    android:id="@+id/ipset_mainip_port_et"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="number"
+                    android:textSize="@dimen/dialog_text_title" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/common_margin15"
+                    android:layout_weight="1"
+                    android:text="@string/AlternateIPaddress" />
+
+                <EditText
+                    android:id="@+id/ipset_mainip2_et"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="number"
+                    android:textSize="@dimen/dialog_text_title" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/common_margin15"
+                    android:layout_weight="1"
+                    android:text="@string/MianIPPort" />
+
+                <EditText
+                    android:id="@+id/ipset_mainip2_port_et"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="number"
+                    android:textSize="@dimen/dialog_text_title" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/common_margin15"
+                    android:layout_weight="1"
+                    android:text="APN" />
+
+                <EditText
+                    android:id="@+id/ipset_mainip3_et"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/dialog_text_title" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/color_split_line" />
+
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="@dimen/common_margin15"-->
+            <!--android:layout_marginTop="@dimen/common_margin1"-->
+            <!--android:text="@string/terminalIP"-->
+            <!--android:textColor="@color/color_wifi_text_seleccted"-->
+            <!--android:textSize="@dimen/titlebar_text_size" />-->
+
+            <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1px"-->
+            <!--android:background="@color/color_split_line" />-->
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<TextView-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="@dimen/common_margin15"-->
+            <!--android:layout_weight="1"-->
+            <!--android:text="@string/IPaddress" />-->
+
+            <!--<EditText-->
+            <!--android:id="@+id/ipset_terminalip_et"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:textSize="@dimen/dialog_text_title" />-->
+            <!--</LinearLayout>-->
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<TextView-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="@dimen/common_margin15"-->
+            <!--android:layout_weight="1"-->
+            <!--android:text="@string/Subnetmask" />-->
+
+            <!--<EditText-->
+            <!--android:id="@+id/ipset_terminalip_et1"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:textSize="@dimen/dialog_text_title" />-->
+            <!--</LinearLayout>-->
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<TextView-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="@dimen/common_margin15"-->
+            <!--android:layout_weight="1"-->
+            <!--android:text="@string/Gateway" />-->
+
+            <!--<EditText-->
+            <!--android:id="@+id/ipset_terminalip_et2"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:textSize="@dimen/dialog_text_title" />-->
+            <!--</LinearLayout>-->
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<TextView-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="@dimen/common_margin15"-->
+            <!--android:layout_weight="1"-->
+            <!--android:text="@string/Proxyservertype" />-->
+
+            <!--<Spinner-->
+            <!--android:id="@+id/ipset_terminalip_et3"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1" />-->
+            <!--</LinearLayout>-->
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<TextView-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="@dimen/common_margin15"-->
+            <!--android:layout_weight="1"-->
+            <!--android:text="@string/agentIp" />-->
+
+            <!--<EditText-->
+            <!--android:id="@+id/ipset_terminalip_et4"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1" />-->
+            <!--</LinearLayout>-->
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<TextView-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="@dimen/common_margin15"-->
+            <!--android:layout_weight="1"-->
+            <!--android:text="@string/Proxyserverconnectionmode" />-->
+
+            <!--<Spinner-->
+            <!--android:id="@+id/ipset_terminalip_et5"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1" />-->
+            <!--</LinearLayout>-->
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<TextView-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="@dimen/common_margin15"-->
+            <!--android:layout_weight="1"-->
+            <!--android:text="@string/UserName" />-->
+
+            <!--<EditText-->
+            <!--android:id="@+id/ipset_terminalip_et6"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1" />-->
+            <!--</LinearLayout>-->
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<TextView-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="@dimen/common_margin15"-->
+            <!--android:layout_weight="1"-->
+            <!--android:text="@string/Password" />-->
+
+            <!--<EditText-->
+            <!--android:id="@+id/ipset_terminalip_et7"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1" />-->
+            <!--</LinearLayout>-->
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginBottom="85dp"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<TextView-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="@dimen/common_margin15"-->
+            <!--android:layout_weight="1"-->
+            <!--android:text="@string/Terminallistenerport" />-->
+
+            <!--<EditText-->
+            <!--android:id="@+id/ipset_terminalip_et8"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1" />-->
+            <!--</LinearLayout>-->
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/setwifi_setmainip_ll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/titlebar_height"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/feature_item_common_size"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/setwifi_setmainip_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/feature_item_common_size"
+            android:layout_weight="1"
+            android:background="@drawable/common_btn_bg_selector"
+            android:text="@string/mainIPset"
+            android:textColor="@color/color_white" />
+
+        <!--<Button-->
+        <!--android:id="@+id/setwifi_setterminalip_btn"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_margin="@dimen/feature_item_common_size"-->
+        <!--android:layout_weight="1"-->
+        <!--android:background="@drawable/common_btn_bg_selector"-->
+        <!--android:text="@string/terminalIPset" />-->
+    </LinearLayout>
+</RelativeLayout>

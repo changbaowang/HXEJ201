@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/HXEJ201.iml" filepath="$PROJECT_DIR$/HXEJ201.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app1.iml" filepath="$PROJECT_DIR$/app/app1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pullToRefreshlibrary/pullToRefreshlibrary.iml" filepath="$PROJECT_DIR$/pullToRefreshlibrary/pullToRefreshlibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/terminalinfolib/terminalinfolib.iml" filepath="$PROJECT_DIR$/terminalinfolib/terminalinfolib.iml" />
+    </modules>
+  </component>
+</project>

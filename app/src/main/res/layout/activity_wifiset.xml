@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cn.hxgroup.www.hhu.ui.feature.WIFIsetActivity">
+
+    <RelativeLayout
+        android:id="@+id/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/color_titlebar_bg">
+
+        <ImageView
+            android:id="@+id/feature_wifiset_backiv"
+            android:layout_width="@dimen/titlebar_height"
+            android:layout_height="@dimen/titlebar_height"
+            android:background="@drawable/btn_back_bg_selector"
+            android:src="@drawable/back_arrow" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/WIFIset"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/titlebar_text_size" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/action_bar"
+        android:layout_marginTop="15dp"
+        android:background="@color/color_split_line" />
+
+    <LinearLayout
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/action_bar"
+        android:orientation="vertical"
+        android:paddingBottom="5dp"
+        android:paddingLeft="@dimen/feature_item_horizontal_space"
+        android:paddingRight="@dimen/feature_item_horizontal_space"
+        android:paddingTop="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/WIFIname"
+                android:textColor="@color/color_item_title"
+                android:textSize="@dimen/item_title_text_size" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <CheckBox
+                android:id="@+id/wifiset_item_local_wifi_cb"
+                android:layout_width="28dp"
+                android:layout_height="16dp"
+                android:background="@drawable/checkbox_bg_selector"
+                android:button="@null" />
+        </LinearLayout>
+
+        <cn.hxgroup.www.hhu.ui.component.ClearEditText
+            android:id="@+id/wifiset_item_local_wifi_et"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_margin35"
+            android:enabled="false"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/feature_item_common_size"
+            android:paddingRight="@dimen/feature_item_common_size"
+            android:textSize="@dimen/item_content_text_size" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/line1"
+        android:background="@color/color_split_line" />
+
+    <LinearLayout
+        android:id="@+id/setwifi_ll2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/titlebar_height"
+        android:layout_below="@id/line1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/common_margin2"
+            android:layout_weight="9"
+            android:gravity="center_vertical"
+            android:text="@string/WIFIpassword"
+            android:textColor="@color/color_item_title"
+            android:textSize="@dimen/item_title_text_size" />
+
+        <ImageView
+            android:id="@+id/feature_wifiset_pwsiv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/common_margin2"
+            android:layout_weight="1"
+            android:src="@drawable/ipsetmore" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/setwifi_ll2"
+        android:background="@color/color_split_line" />
+
+    <EditText
+        android:id="@+id/setwifi_old_pws"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/setwifi_ll2"
+        android:layout_marginLeft="@dimen/common_margin15"
+        android:layout_marginTop="@dimen/common_margin1"
+        android:hint="@string/oldpassword"
+        android:inputType="textPassword"
+        android:textSize="@dimen/dialog_text_content"
+        android:visibility="invisible" />
+
+    <EditText
+        android:id="@+id/setwifi_new_pws1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/setwifi_old_pws"
+        android:layout_marginLeft="@dimen/common_margin15"
+        android:layout_marginTop="@dimen/common_margin1"
+        android:hint="@string/newpassword"
+        android:inputType="textPassword"
+        android:textSize="@dimen/dialog_text_content"
+        android:visibility="invisible" />
+
+    <EditText
+        android:id="@+id/setwifi_new_pws2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/setwifi_new_pws1"
+        android:layout_marginLeft="@dimen/common_margin15"
+        android:layout_marginTop="@dimen/common_margin1"
+        android:hint="@string/newpassword2"
+        android:inputType="textPassword"
+        android:textSize="@dimen/dialog_text_content"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/setwifi_setname_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/common_btn_bg_selector"
+            android:text="@string/setWIFIname"
+            android:textColor="@color/color_white" />
+
+        <Button
+            android:id="@+id/setwifi_setpws_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/common_btn_bg_selector"
+            android:text="@string/WIFIpassword"
+            android:textColor="@color/color_white" />
+    </LinearLayout>
+</RelativeLayout>

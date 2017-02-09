@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/checktime_item_device_time_ll"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/feature_item_height"
+    android:background="@color/color_white"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/feature_item_horizontal_space"
+        android:paddingRight="@dimen/feature_item_horizontal_space"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/item_title_text_size"
+            android:textColor="@color/color_item_title"
+            android:text="@string/kDeviceTime"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/checktime_item_device_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/item_content_text_size"
+            android:textColor="@color/color_item_content"
+            android:gravity="center_vertical"
+            android:text="@string/kDeviceTime"/>
+
+    </LinearLayout>
+</LinearLayout>

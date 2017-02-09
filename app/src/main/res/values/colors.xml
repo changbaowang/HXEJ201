@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_split_line">#39000000</color>
+    <color name="color_white">#FFFFFF</color>
+    <color name="color_titlebar_bg">#d0000000</color>
+    <color name="color_common_item_bg_pressed">#e0e0e0</color>
+    <color name="color_common_text">#979797</color>
+    <color name="color_search_bg">#e0e0e0</color>
+    <color name="color_wifi_text_seleccted">#3098f5</color>
+    <color name="color_tab_text_seleccted">#3098f5</color>
+    <color name="color_common_btn_bg_normal">#2778d3</color>
+    <color name="color_common_btn_bg_pressed">#2f70ba</color>
+    <color name="color_item_title">#000000</color>
+    <color name="color_item_content">#777a7c</color>
+    <color name="color_Instructions">#04a9d1</color>
+    <!-- Dialog-->
+    <color name="color_dialog_text_title">#000000</color>
+    <color name="color_dialog_text_content">#45494c</color>
+    <color name="color_dialog_text_btn">#000000</color>
+    <color name="color_num">#0ef2d4</color>
+    <!-- Dialog-->
+
+    <!-- 相位角颜色 -->
+    <color name="color_uabua">#fff90c</color>
+    <color name="color_ub">#8817ffb2</color>
+    <color name="color_ucbuc">#ff91a0</color>
+    <color name="color_ia">#ffc306</color>
+    <color name="color_ib">#00ff19</color>
+    <color name="color_ic">#ff0000</color>
+    <color name="color_phase_map_text">#777a7c</color>
+
+    <!-- 相位角颜色 -->
+    <color name="loginbackground">#374761</color>
+    <color name="loginbtnbg">#14b4c9</color>
+    <color name="loginhint">#ffffff</color>
+    <color name="connbtnbg">#f4962f</color>
+    <color name="mainactbg">#12335d</color>
+</resources>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/version_sub_device_ll"
+              android:orientation="vertical"
+              android:background="@color/color_white"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/color_split_line"/>
+    <!-- 厂商代号-->
+    <include
+        layout="@layout/version_item_manufacturer"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/color_split_line"/>
+    <!-- 设备编号-->
+    <include
+        layout="@layout/version_item_device_code"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/color_split_line"/>
+<!--终端软件版本号-->
+    <include
+        layout="@layout/version_item_device_software_version"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/color_split_line"/>
+<!--终端软件发布日期-->
+    <include
+        layout="@layout/version_item_device_software_date"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/color_split_line"/>
+<!--终端配置容量信息-->
+    <include
+        layout="@layout/version_item_device_capacity"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/color_split_line"/>
+    <!-- 终端通讯协议版本号-->
+    <include
+        layout="@layout/version_item_device_protocol_version"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/color_split_line"/>
+<!--终端硬件版本号-->
+    <include
+        layout="@layout/version_item_device_hardware_version"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/color_split_line"/>
+
+    <!-- 终端硬件发布日期-->
+    <include
+        layout="@layout/version_item_device_hardware_date"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/color_split_line"/>
+
+    <!-- 下行通讯模块内部测试软件版本号-->
+    <include
+        layout="@layout/version_item_communication"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/color_split_line"/>
+
+</LinearLayout>

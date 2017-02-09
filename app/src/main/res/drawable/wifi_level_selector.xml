@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<selector xmlns:android="http://schemas.android.com/apk/res/android">-->
+
+<!--</selector>-->
+
+<level-list xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:maxLevel="50" android:minLevel="0" android:drawable="@drawable/wifi_4"  />
+<item android:maxLevel="70" android:minLevel="51" android:drawable="@drawable/wifi_3" />
+<item android:maxLevel="80" android:minLevel="71" android:drawable="@drawable/wifi_2" />
+<item android:maxLevel="100" android:minLevel="81" android:drawable="@drawable/wifi_1" />
+</level-list>

@@ -1,0 +1,86 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Base.Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="DialogStyle">
+        <item name="android:windowFrame">@null</item>
+        <!-- 该界面对应的前景图片 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否悬浮窗类型 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 是否透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 是否带有title -->
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="CustomDialogStyle" parent="android:Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">@null</item>
+        <!--<item name="android:windowContentOverlay">@null</item>-->
+        <!--<item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>-->
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <!--版本管理item样式-->
+    <style name="version_item_content_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_marginLeft">@dimen/feature_item_horizontal_space</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textColor">@color/color_item_content</item>
+        <item name="android:textSize">@dimen/item_content_text_size</item>
+    </style>
+
+    <style name="version_item_layout_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="version_item_title_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_marginLeft">@dimen/feature_item_horizontal_space</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textColor">@color/color_item_title</item>
+        <item name="android:textSize">@dimen/item_title_text_size</item>
+    </style>
+    <!-- 版本管理item样式-->
+
+    <!-- 电压、电流信息item样式 -->
+    <style name="electric_item_title_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_marginLeft">@dimen/feature_item_horizontal_space</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textColor">@color/color_item_title</item>
+        <item name="android:textSize">@dimen/item_title_text_size</item>
+    </style>
+
+    <style name="electric_item_content_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_marginRight">@dimen/feature_item_horizontal_space</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textColor">@color/color_item_content</item>
+        <item name="android:textSize">@dimen/item_content_text_size</item>
+    </style>
+    <!-- 电压、电流信息item样式 -->
+
+</resources>

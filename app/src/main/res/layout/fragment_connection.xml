@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/index6">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/loginhint"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/connection_set_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/connect_btn_bg"
+            android:textColor="@color/color_white"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/connection_wifi_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/connect_btn_bg"
+            android:text="@string/kWifi"
+            android:textColor="@color/color_white" />
+
+    </LinearLayout>
+</RelativeLayout>
